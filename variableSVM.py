@@ -69,7 +69,7 @@ def trainingGram(x, y, sigmavalues):
 #Load peak data from CSV files (Comma delimited)
 #Columns are Water, 1st Fat, 2nd Fat, 3rd Fat, R2*
 WAT = np.loadtxt('/home/path/',delimiter=',')
-BAT = np.loadtxt('/home/path/,delimiter=',')
+BAT = np.loadtxt('/home/path/',delimiter=',')
 
 WAT = np.transpose(WAT)
 BAT = np.transpose(BAT)

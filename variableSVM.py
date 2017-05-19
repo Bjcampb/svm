@@ -68,8 +68,8 @@ def trainingGram(x, y, sigmavalues):
 
 #Load peak data from CSV files (Comma delimited)
 #Columns are Water, 1st Fat, 2nd Fat, 3rd Fat, R2*
-WAT = np.loadtxt('/home/brandon/Documents/Projects/SVM_MRI/Mouse_Data/Volume_Coil_2D/Mouse_1/Mouse_1_Volume_2D_Pre_WAT',delimiter=',')
-BAT = np.loadtxt('/home/brandon/Documents/Projects/SVM_MRI/Mouse_Data/Volume_Coil_2D/Mouse_1/Mouse_1_Volume_2D_Pre_BAT',delimiter=',')
+WAT = np.loadtxt('/home/path/',delimiter=',')
+BAT = np.loadtxt('/home/path/,delimiter=',')
 
 WAT = np.transpose(WAT)
 BAT = np.transpose(BAT)
@@ -96,7 +96,7 @@ svmModel.fit(gram, group)
 #########
 #######
 
-testData = np.loadtxt('/home/brandon/Documents/Projects/SVM_MRI/Mouse_Data/Volume_Coil_2D/Mouse_1/Mouse_1_Volume_2D_Post_45_WAT',delimiter=',')
+testData = np.loadtxt('/home/path/',delimiter=',')
 
 testingKernel = trainingGram(xData, testData, sigma)
 
